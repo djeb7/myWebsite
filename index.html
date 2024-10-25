@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Djeb7's Personal Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Body and Font */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #e0eaff, #f0f8ff);
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 10px 0 0;
+        }
+
+        /* Header and Footer */
+        header, footer {
+            background: linear-gradient(135deg, #0044cc, #003399);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        /* Card Layout for Languages */
+        .card-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #e0e7ff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            text-align: center;
+            min-width: 200px;
+        }
+
+        /* Progress Bars */
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            height: 25px;
+            width: 100%;
+        }
+
+        .progress {
+            background-color: #0044cc;
+            height: 100%;
+            border-radius: 5px;
+            width: 0; /* Start width at 0 for animation */
+            animation: growBar 2s ease forwards; /* Add animation to the progress bars */
+        }
+
+        /* Keyframe animation for progress bars */
+        @keyframes growBar {
+            from {
+                width: 0;
+            }
+            to {
+                width: var(--progress-width); /* Use CSS variables to control width */
+            }
+        }
+
+        /* Button Styling */
+        .button {
+            background-color: #0044cc;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            margin-right: 10px; /* Space between buttons */
+        }
+        .button:hover {
+            background-color: #002a80;
+        }
+
+        /* Space Below the Buttons */
+        .button-section {
+            margin-bottom: 40px; /* Adjust this value for more or less spacing */
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="hero">
+            <h1>Welcome to Djeb7's Space</h1>
+            <p>Programmer • Soccer Enthusiast • Future Software Engineer</p>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section>
+        <h2>About Me:</h2>
+        <p>Hi, I'm Djeb7. I am an African American programmer with dreams of becoming a software engineer in the future. My journey into the world of programming began at a young age, fueled by my curiosity and passion for technology. I enjoy exploring various programming languages and am currently learning HTML, CSS, MySQL, and Lua. Each language presents its own unique challenges, but I find joy in overcoming them and creating functional projects.</p>
+        <p>Apart from coding, I have a deep love for sports, especially soccer. The thrill of the game and the camaraderie it brings are truly exhilarating. Whether I'm playing with friends or cheering for my favorite teams, soccer is a big part of my life. I also enjoy anything related to running, which keeps me active and healthy.</p>
+        <p>As I continue to learn and grow in my programming skills, I'm excited about the possibilities that lie ahead. I hope to contribute to innovative projects and make a positive impact through technology. I believe that with hard work and dedication, I can achieve my goals and inspire others to pursue their passions as well.</p>
+    </section>
+
+    <!-- Languages Section with Progress Bars -->
+    <section>
+        <h2>Languages I Have Learned or Am Still Learning:</h2>
+        <div class="skill">
+            <p>HTML (53%)</p>
+            <div class="progress-bar">
+                <div class="progress" style="--progress-width: 53%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>CSS (41%)</p>
+            <div class="progress-bar">
+                <div class="progress" style="--progress-width: 41%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>MySQL (19%)</p>
+            <div class="progress-bar">
+                <div class="progress" style="--progress-width: 19%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>Lua (100%)</p>
+            <div class="progress-bar">
+                <div class="progress" style="--progress-width: 100%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Button -->
+    <section class="button-section">
+        <h2>Contact Me</h2>
+        <a href="mailto:dancingoy2019@gmail.com" class="button">Contact Me</a>
+        <a href="#learn-more" class="button">Learn More</a> <!-- Learn More Button -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Djeb7, Striving to make the web a little better</p>
+    </footer>
+
+</body>
+</html>
